@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 200px;
+}
+
+.logo {
+    color: #888;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-item {
+    color: #555;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Ajuste el margen inferior del botón "Habits" */
+}
+
+
+.menu-item.active {
+    background-color: #ddd;
+    font-weight: bold;
+}
+
+.content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.habit-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.habit {
+    width: 45%;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+.menu-item-group {
+    display: flex;
+    align-items: center;
+}
+
+.habit-list {
+    display: block;
+}
+
+.habit {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.grey-background {
+    background-color: #f2f2f2;
+    border-radius: 20px; /* Contorno ovalado */
+    box-shadow: 0px 1px 2px #aaa;
+}
+
+.grey-shadow {
+    box-shadow: 0px 1px 2px #aaa;
+}
+
+.line {
+    border-bottom: 1px solid black; /* Línea negra */
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .habit {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .content {
+        margin-left: 360px;
+    }
+
+    .habit {
+        width: 45%;
+    }
+
+    .menu-item-group {
+        display: block;
+    }
+}
+
+.logo-container {
+    display: inline-block;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.profile {
+    display: inline-block;
+    vertical-align: top; /* Alinea la imagen y el nombre de usuario en la parte superior */
+}
+
+.profile-picture {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px; /* Espacio entre la imagen y el texto */
+}
+
+.username {
+    font-size: 14px;
+    color: #555;
+    margin-top: 20px; /* Espacio entre la imagen y el nombre de usuario */
+    margin-right: 20px; /* Ajuste del margen derecho para mover el texto hacia la derecha */
+}
+
+
+.menu-items-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200%;
+    margin-bottom: 50px;
+
+}
+
+.menu-items-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-space-button {
+    margin-top: 200px;
+}
+
+/* ... other styles ... */
+
+@media (max-width: 560px) {
+    .create-space-button {
+        margin-top: 40px;
+    }
+}
+
+
+
+.settings-image {
+    margin-top: 80px; /* Espacio entre el botón y la imagen de settings */
+    width: 50px;
+
+}
+
